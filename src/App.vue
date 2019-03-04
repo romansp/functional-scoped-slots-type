@@ -2,17 +2,22 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <FuncVNode />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import HelloWorld from './components/HelloWorld.vue';
+import VNodeFunc from './components/VNodeFunc.vue';
+import VNode from './components/VNode.vue';
 
 export default Vue.extend({
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    VNodeFunc,
+    VNode
   }
 });
 </script>
